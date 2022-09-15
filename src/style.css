@@ -1,0 +1,74 @@
+@media only screen and (max-width: 800px) {
+  .main-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" "mainContent"
+}
+  nav#navbar {
+    position: inherit;
+  }
+}
+
+.WWEJC, .WWERock, .WWEAJS, .WWEDB, .WWETU {
+  width: 550px;
+}
+
+header {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+#header {
+  font-size: 1.7em;
+}
+
+
+.main-body {
+  display: grid;
+  position: fixed;
+  grid-template-columns: minmax(250px, auto) 1fr;
+  grid-template-area: "navbar mainContent";
+  grid-gap: 15px;  
+}
+
+.golden-belt {
+  width: 250px;
+}
+
+
+#navbar {
+  grid-area: navbar;
+  position: fixed;
+  max-height: auto;
+  background-color: gray;
+}
+
+#navbar a {
+  display: block;
+  border: 1px solid #800020;
+  padding: 10px;
+  margin: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #800020;
+  background-color: gold;
+  font-size: 18px;
+}
+
+#main-doc {
+  grid-area: mainContent;
+}
+
+code {
+  font-size: 1.2em;
+  display: block; 
+  font-style: italic;
+  color: green;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+ul, li {
+  text-align: center;
+  text-decoration: none; 
+}
